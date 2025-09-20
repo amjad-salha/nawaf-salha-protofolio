@@ -1,99 +1,292 @@
 body {
-  font-family: 'Cairo', sans-serif;
-  background: #f7f7f7;
+  font-family: 'Cairo', Arial, sans-serif;
+  background: #f2f7fb;
   margin: 0;
   padding: 0;
   direction: rtl;
-  text-align: right;
 }
+
 header {
-  background: #1b2936;
+  background: linear-gradient(90deg,#23406e 60%,#446fa7 100%);
   color: #fff;
-  padding: 30px 10px 15px 10px;
-  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 8px #d2e1f3;
 }
-header nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-section {
-  margin: 30px 5% 10px 5%;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #e0e0e0;
-  padding: 25px;
-}
-h1, h2 {
-  color: #1b2936;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eaeaea;
-}
-.gallery {
+
+.header-top {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5% 5px 5%;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 16px;
+  border: 2px solid #446fa7;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.site-title p {
+  margin: 2px 0 0 0;
+  font-size: 1.1rem;
+  color: #e0e9f3;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+.social-icons a:hover img {
+  transform: scale(1.15);
+}
+
+nav {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+nav a {
+  color: #fff;
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+nav a:hover, nav a:focus {
+  border-bottom: 2px solid #fff;
+}
+
+section {
+  margin: 35px 5% 20px 5%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #e2e9f4;
+  padding: 32px 18px;
+}
+
+h2 {
+  color: #335fa5;
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.services-list {
+  display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  gap: 22px;
+  justify-content: center;
 }
-.gallery img {
-  width: 130px;
-  height: 90px;
+.service-card {
+  background: #eef6ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px #d0e1f7;
+  padding: 18px 14px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.18s;
+}
+.service-card:hover {
+  transform: translateY(-7px) scale(1.04);
+  box-shadow: 0 4px 18px #bdd4f6;
+}
+.service-card img {
+  width: 48px;
+  margin-bottom: 10px;
+}
+.service-card h3 {
+  color: #23406e;
+  font-size: 1.07rem;
+  margin-bottom: 6px;
+}
+.service-card p {
+  color: #446fa7;
+  font-size: 0.98rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.portfolio-card {
+  background: #f9fcff;
+  border-radius: 10px;
+  box-shadow: 0 2px 9px #e0eaf7;
+  width: 250px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card:hover {
+  box-shadow: 0 6px 26px #b0c8ef;
+  transform: scale(1.04);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 140px;
   object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px #bbb;
 }
+.card-content {
+  padding: 10px 14px;
+}
+.card-content h3 {
+  color: #23406e;
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+}
+.card-content a {
+  color: #446fa7;
+  text-decoration: underline;
+  font-size: 0.97rem;
+}
+
+.testimonials-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial-card {
+  background: #eef6ff;
+  border-radius: 9px;
+  box-shadow: 0 2px 7px #d0e1f7;
+  padding: 18px 14px;
+  width: 230px;
+  text-align: center;
+  font-size: 1.02rem;
+  color: #23406e;
+  margin-bottom: 12px;
+}
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #446fa7;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 14px;
+  margin-top: 10px;
 }
 input, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 16px;
+  padding: 13px;
+  border-radius: 6px;
+  border: 1px solid #d3e2f7;
+  font-size: 1.06rem;
+  resize: vertical;
 }
 button {
-  background: #1b2936;
+  background: linear-gradient(90deg,#23406e 60%,#446fa7 100%);
   color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 17px;
+  padding: 13px;
+  border-radius: 6px;
+  font-size: 1.11rem;
   cursor: pointer;
   transition: background 0.2s;
+  font-weight: bold;
 }
 button:hover {
-  background: #334e6f;
+  background: linear-gradient(90deg,#446fa7 60%,#23406e 100%);
 }
 #formMessage {
   margin-top: 10px;
-  color: green;
+  color: #389e3d;
   font-weight: bold;
+  font-size: 1.05rem;
 }
+
 footer {
-  text-align: center;
-  background: #1b2936;
+  background: #23406e;
   color: #fff;
-  padding: 15px 0;
-  margin-top: 30px;
-  border-radius: 0 0 8px 8px;
+  text-align: center;
+  padding: 18px 0 9px 0;
+  border-radius: 0 0 12px 12px;
+  margin-top: 28px;
+  box-shadow: 0 -2px 10px #d2e1f3;
 }
-@media (max-width: 600px) {
-  section {
-    margin: 15px 2% 7px 2%;
-    padding: 15px;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.footer-social a img {
+  width: 25px;
+  height: 25px;
+  margin-left: 7px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+.footer-social a:hover img {
+  transform: scale(1.15);
+}
+
+.whatsapp-float {
+  position: fixed;
+  left: 22px;
+  bottom: 22px;
+  z-index: 99;
+  background: #24d366;
+  border-radius: 50%;
+  padding: 7px;
+  box-shadow: 0 2px 10px #b0c8ef;
+  transition: background 0.2s;
+}
+.whatsapp-float img {
+  width: 37px;
+  height: 37px;
+  display: block;
+}
+.whatsapp-float:hover {
+  background: #128c7e;
+}
+
+@media (max-width: 900px) {
+  .header-top, .footer-content {
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
   }
-  .gallery img {
-    width: 90px;
-    height: 60px;
+  .logo, .footer-logo {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  section {
+    margin: 20px 2% 14px 2%;
+    padding: 20px 7px;
+  }
+  .services-list, .portfolio-grid, .testimonials-list {
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+  }
+  .service-card, .portfolio-card, .testimonial-card {
+    width: 98%;
+    max-width: 330px;
   }
 }
