@@ -5,34 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>نواف صالحة | خدمات التصميم والذكاء الاصطناعي</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>نواف صالحة</h1>
-    <p>خدمات التصميم والذكاء الاصطناعي</p>
+    <div class="header-top">
+      <img src="images/logo.svg" alt="شعار الموقع" class="logo">
+      <div class="site-title">
+        <h1>نواف صالحة</h1>
+        <p>خدمات التصميم والذكاء الاصطناعي</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://wa.me/966xxxxxxxxx" target="_blank" title="واتساب"><img src="images/whatsapp.svg" alt="واتساب"></a>
+        <a href="https://twitter.com/" target="_blank" title="تويتر"><img src="images/twitter.svg" alt="تويتر"></a>
+        <a href="mailto:email@example.com" target="_blank" title="إيميل"><img src="images/mail.svg" alt="إيميل"></a>
+      </div>
+    </div>
     <nav>
       <a href="#services">الخدمات</a>
       <a href="#portfolio">معرض الأعمال</a>
-      <a href="#contact">نموذج التواصل</a>
+      <a href="#testimonials">آراء العملاء</a>
+      <a href="#contact">تواصل معنا</a>
     </nav>
   </header>
 
   <section id="services">
     <h2>خدماتنا</h2>
-    <ul>
-      <li>تصميم المواقع والمتاجر الإلكترونية</li>
-      <li>تصميم الشعارات والهويات البصرية</li>
-      <li>إنتاج الفيديوهات الإعلانية والبانرات</li>
-      <li>تطوير أدوات الذكاء الاصطناعي</li>
-    </ul>
+    <div class="services-list">
+      <div class="service-card">
+        <img src="images/service1.svg" alt="تصميم مواقع">
+        <h3>تصميم المواقع والمتاجر</h3>
+        <p>تطوير مواقع احترافية ومتاجر إلكترونية تلبي احتياجاتك.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service2.svg" alt="تصميم شعارات">
+        <h3>تصميم الشعارات والهويات</h3>
+        <p>ابتكار هويات بصرية تعبر عن علامتك التجارية.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service3.svg" alt="فيديوهات">
+        <h3>إنتاج فيديوهات وبانرات</h3>
+        <p>إعلانات مرئية جذابة تزيد من انتشارك.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service4.svg" alt="ذكاء اصطناعي">
+        <h3>تطوير أدوات الذكاء الاصطناعي</h3>
+        <p>حلول ذكية لمشاريعك باستخدام أحدث التقنيات.</p>
+      </div>
+    </div>
   </section>
 
   <section id="portfolio">
     <h2>معرض الأعمال</h2>
-    <div class="gallery">
-      <img src="images/work1.jpg" alt="عمل رقم 1">
-      <img src="images/work2.jpg" alt="عمل رقم 2">
-      <img src="images/work3.jpg" alt="عمل رقم 3">
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="images/work1.jpg" alt="عمل رقم 1">
+        <div class="card-content">
+          <h3>متجر إلكتروني</h3>
+          <a href="#" target="_blank">مشاهدة المشروع</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="images/work2.jpg" alt="عمل رقم 2">
+        <div class="card-content">
+          <h3>هوية بصرية</h3>
+          <a href="#" target="_blank">مشاهدة المشروع</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="images/work3.jpg" alt="عمل رقم 3">
+        <div class="card-content">
+          <h3>فيديو دعائي</h3>
+          <a href="#" target="_blank">مشاهدة المشروع</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>آراء العملاء</h2>
+    <div class="testimonials-list">
+      <div class="testimonial-card">
+        <p>"خدمة ممتازة وتصميم احترافي. أنصح الجميع!"</p>
+        <span>- محمد العتيبي</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"سرعة في الإنجاز وجودة في العمل."</p>
+        <span>- سارة المهدي</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"أفضل تجربة في تطوير متجر إلكتروني."</p>
+        <span>- أحمد بن صالح</span>
+      </div>
     </div>
   </section>
 
@@ -48,8 +113,19 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 جميع الحقوق محفوظة لنواف صالحة</p>
+    <div class="footer-content">
+      <img src="images/logo.svg" alt="الشعار" class="footer-logo">
+      <p>&copy; 2025 جميع الحقوق محفوظة لنواف صالحة</p>
+      <div class="footer-social">
+        <a href="https://wa.me/966xxxxxxxxx" target="_blank"><img src="images/whatsapp.svg" alt="واتساب"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="تويتر"></a>
+        <a href="mailto:email@example.com" target="_blank"><img src="images/mail.svg" alt="إيميل"></a>
+      </div>
+    </div>
   </footer>
+  <a href="https://wa.me/966xxxxxxxxx" class="whatsapp-float" target="_blank" title="تواصل واتساب">
+    <img src="images/whatsapp.svg" alt="واتساب">
+  </a>
   <script src="script.js"></script>
 </body>
 </html>
