@@ -1,0 +1,99 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+}
+header {
+  background: #1b2936;
+  color: #fff;
+  padding: 30px 10px 15px 10px;
+  text-align: center;
+}
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  margin: 30px 5% 10px 5%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #e0e0e0;
+  padding: 25px;
+}
+h1, h2 {
+  color: #1b2936;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.gallery img {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #bbb;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+button {
+  background: #1b2936;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #334e6f;
+}
+#formMessage {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  background: #1b2936;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-radius: 0 0 8px 8px;
+}
+@media (max-width: 600px) {
+  section {
+    margin: 15px 2% 7px 2%;
+    padding: 15px;
+  }
+  .gallery img {
+    width: 90px;
+    height: 60px;
+  }
+}
